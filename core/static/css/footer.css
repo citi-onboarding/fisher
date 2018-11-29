@@ -1,0 +1,86 @@
+.footer {
+    width: 100%;
+    background-color: #F2F2F2;
+    height: 270px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.quadrado {
+    width: 100px;
+    height: 170px;
+    margin: 20px;
+}
+
+#parcerias {
+    color: #000055;
+    font-size: 30px;
+}
+
+.meio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icones {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#tt {
+    padding-right: 80px;
+}
+
+#insta {
+    padding-right: 70px;
+}
+
+.tam {
+    width: 50px;
+    height: 50px;
+}
+
+#email {
+    padding: 10px;
+    color: #000055;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.local:after {
+    content: '';
+	background-color: #01013A;
+	display: block;
+	transform: rotate(45deg);
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 76px;
+    top: 28px;
+	background-image: url("imagens/place.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50px;  
+}
+
+@media (max-width: 400px) {
+    #parcerias {
+        order: 1;
+    }
+
+    #q-2 {
+        order: 3;
+    }
+
+    #q-3 {
+        order: 2;
+    }
+
+}

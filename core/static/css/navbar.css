@@ -5,6 +5,10 @@ body {
 
 /* NAVBAR */
 
+#navbar {
+    z-index: 100;
+}
+
 .logo {
     width: 12%;
     float: left;

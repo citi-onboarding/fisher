@@ -1,4 +1,4 @@
-.box {
+.box-depoimentos {
     display: flex;
     flex-direction: column;
     width: 55vw;
@@ -41,7 +41,7 @@ h1:after {
 	margin-left: 20px;
 }
 
-.depoimentos {
+.depoimentos-depoimentos {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -50,7 +50,7 @@ h1:after {
 }
 
 
-.cima {
+.cima-depoimentos {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -73,7 +73,7 @@ h1:after {
     text-align-last: right;
 }
 
-.quadrilateros {
+.quadrilateros-depoimentos {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -88,7 +88,7 @@ h1:after {
     color: #9d9db0;
 }
 
-.rombo:after {
+.rombo-depoimentos:after {
 	content: '';
     background-color: #323458;
     display: block;
@@ -105,7 +105,7 @@ h1:after {
     background-size: 25vw;
 }
 
-.losango:after {
+.losango-depoimentos:after {
     content: '';
     background-color: #323458;
     display: block;
@@ -150,14 +150,14 @@ h1:after {
 }
 
 @media (max-width: 1300px) {
-    .rombo:after {
+    .rombo-depoimentos:after {
         width: 230px;
         height: 230px;
         top: 120px;
     }
 
 
-    .losango:after {
+    .losango-depoimentos:after {
         width: 57px;
         height: 57px;
         right: 420px;
@@ -185,22 +185,22 @@ h1:after {
         
     }
 
-    .depoimentos {
+    .depoimentos-depoimentos {
         height: 100%;
         width: 100%;
         
     }
 
-    .cima {
+    .cima-depoimentos {
         height: 100%;
     }
 
-    .rombo:after {
+    .rombo-depoimentos:after {
         width: 150px;
         height: 150px;
     }
 
-    .losango:after {
+    .losango-depoimentos:after {
         width: 40px;
         height: 40px;
         right: 335px;

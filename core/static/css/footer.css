@@ -1,4 +1,4 @@
-.footer {
+.footer-footer {
     width: 100%;
     background-color: #F2F2F2;
     height: 270px;
@@ -9,7 +9,7 @@
     flex-wrap: wrap;
 }
 
-.quadrado {
+.quadrado-footer {
     width: 100px;
     height: 170px;
     margin: 20px;
@@ -20,7 +20,7 @@
     font-size: 30px;
 }
 
-.meio {
+.meio-footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -28,7 +28,7 @@
     flex-wrap: wrap;
 }
 
-.icones {
+.icones-footer {
     display: flex;
     flex-direction: row;
     
@@ -47,14 +47,14 @@
     height: 50px;
 }
 
-#email {
+#email-footer {
     padding: 10px;
     color: #000055;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
 
-.local:after {
+.local-footer:after {
     content: '';
 	background-color: #01013A;
 	display: block;
@@ -75,11 +75,11 @@
         order: 1;
     }
 
-    #q-2 {
+    #q-2-footer {
         order: 3;
     }
 
-    #q-3 {
+    #q-3-footer {
         order: 2;
     }
 

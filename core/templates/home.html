@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,9 +6,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/base.css' %}">
   <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/navbar.css' %}">
   <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/banner.css' %}">
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/servicosSlider.css' %}">
   <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/servicos.css' %}">
   <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/sobrenos.css' %}">
   <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/depoimentos.css' %}">
@@ -24,7 +27,7 @@
       <div id="container">
         <div id="navbarra">
           <div class="logo">
-            <img id="logomarca" src="imagens/logof.png">
+            <img id="logomarca" src="{% static 'imagens/logo.png' %}">
           </div>
           <div class="toggle">
             <div class="container" onclick="myfunction(this)">
@@ -337,13 +340,14 @@
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="{% static 'js/base.js' %}"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- <script src="{% static 'js/base.js' %}"></script> -->
   <script src="{% static 'js/navbar.js' %}"></script>
-  <script src="{% static 'js/banner.js' %}"></script>
-  <script src="{% static 'js/sobrenos.js' %}"></script>
-  <script src="{% static 'js/servicos.js' %}"></script>
+  <!-- <script src="{% static 'js/banner.js' %}"></script> -->
+  <!-- <script src="{% static 'js/sobrenos.js' %}"></script> -->
+  <!-- <script src="{% static 'js/servicos.js' %}"></script> -->
   <script src="{% static 'js/depoimentos.js' %}"></script>
-  <script src="{% static 'js/contato.js' %}"></script>
-  <script src="{% static 'js/footer.js' %}"></script>
+  <!-- <script src="{% static 'js/contato.js' %}"></script> -->
+  <!-- <script src="{% static 'js/footer.js' %}"></script> -->
 </body>
 </html>

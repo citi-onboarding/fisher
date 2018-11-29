@@ -1,0 +1,233 @@
+@font-face {
+    font-family: "Caxton Lt BT";
+    src: url("fonts/CaxtonLightBT.ttf");
+    }
+    
+    :root {
+        --cor-base-azul: #01013A;
+        --cor-base-cinza: #D9D9D9;
+        font-family: 'Caxton Lt BT';
+    }
+    
+    html, body, * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Caxton Lt BT';
+    }
+    
+    h1 {
+        align-items: center;
+        color: white;
+        display: flex;
+        font-size: 70px;
+        font-weight: 300;
+        justify-content: center;
+        margin-bottom: 100px;
+        margin-top: 70px;
+        text-align: center;
+    }
+    
+    h1:before, h1:after {
+        content: '';
+        height: 4px;
+        background-color: white;
+        width: 55px;
+    }
+    
+    h1:before {
+        margin-right: 20px;
+    }
+    
+    h1:after {
+        margin-left: 20px;
+    }
+    
+    /*.frase {
+        color: white;
+        font-size: 24px;
+        padding: 0px 200px 20px 0px;
+        text-align: right;
+        width: 100%;
+        display: block;
+    }*/
+    
+    .secao-servico {
+        background-color: var(--cor-base-azul);
+        width: 100%;
+        height: 1500px;
+        position: relative;
+    }
+    
+    .secao-servico:before {
+        content: '';
+        background-color: var(--cor-base-cinza);
+        display: block;
+        width: 100%;
+        height: 70px;
+    }
+    
+    .secao-servico:after {
+        content: '';
+        background-color: white;
+        display: block;
+        transform: rotate(45deg);
+        width: 98px;
+        height: 98px;
+        position: absolute;
+        right: 170px;
+        top: 21px;
+        background-image: url("settings.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50px;  
+    }
+    
+    .texto-slider {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .texto-slider-titulo {
+        text-align: center;
+        color: var(--cor-base-azul);
+        padding-bottom: 20px;
+        flex-grow: 0;
+    }
+    
+    .texto-slider-corpo {
+        text-align: justify;
+        color: var(--cor-base-azul);
+        flex-grow: 1;
+    }
+    
+    .botao-agendamento {
+        text-align: center;
+        color: var(--cor-base-azul);
+        flex-grow: 0;
+        padding: 10px;
+        border: 2px solid var(--cor-base-azul);
+    }
+    
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 20; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+    }
+    
+    .modal-overlay {
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 40%;
+        height: 60%;	
+        position: relative;
+        z-index: 2;
+        background-color: #01013A;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* The Close Button */
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .texto-modal {
+        color: #01013A;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        h1 {
+            align-items: center;
+        }
+    
+        .cascade-slider_item {
+            flex-direction: column;
+        }
+    
+        .cascade-slider_container {
+            width: 100%;
+            height: 680px;
+        }
+    
+        .cascade-slider_nav {
+    
+        }
+    
+        .cascade-slider-item_image {
+            height: 430px;
+        }
+    }
+    
+    
+    @media only screen and (max-width: 320px) {
+        h1 {
+            align-items: center;
+            font-size: 32px;
+            margin-top: 37px;
+        }
+    
+        h1:before, h1:after {
+            width: 34px;
+        }
+    
+        .secao-servico:after {
+            right: 85px;
+            width: 40px;
+            height: 40px;
+            background-size: 30px;
+            top: 8px;
+    
+        }
+    
+        .secao-servico:before {
+            height: 28px;
+        }
+    
+        .cascade-slider_item {
+            flex-direction: column;
+        }
+    
+        .cascade-slider_container {
+            width: 100%;
+            height: 680px;
+        }
+    
+        .cascade-slider_nav {
+    
+        }
+    
+        .cascade-slider-item_image {
+            height: 430px;
+        }
+    }

@@ -1,0 +1,105 @@
+.todo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60vw;
+    text-align: left;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    background-image: url(imagens/Banner.jpg);
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+.filter {
+    width: 100%;
+    height: 46.31vw;
+    background-color: #000092;
+    left: 0;
+    top: 0;
+    opacity: 0.37;
+    position: absolute;
+    z-index: 0;
+}
+
+.text {
+    
+    height: 50px;
+    font-size: 3rem;
+    color: #FFFFFF;
+    padding-top: 90px;
+    padding-left: 130px;
+    z-index: 100;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    
+    padding-bottom: 6vw;
+}
+
+.simbol {
+    padding: 20px;
+    padding-top: 57px;
+    display: block;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-image: url(imagens/Simbolo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60vw;
+    opacity: 0.2;
+   
+}
+
+.todo:after {
+    content: '';
+    background-color: #000055;
+    display: block;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    right: 550px;
+    top: 500px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25vw;
+}
+
+@media (max-width: 1100px) {
+    .text {
+        height: 50px;
+        font-size: 1.8rem;
+        
+        padding-top: 90px;
+        padding-left: 130px;
+       
+    }
+} 
+
+@media (max-width: 760px) {
+    .text {
+        font-size: 1rem;
+        padding-top: 50px;
+    }
+
+    .todo {
+        height: 90vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .text {
+        font-size: 0.7rem;
+    }
+}

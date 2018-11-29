@@ -41,8 +41,8 @@ h1:after {
 	margin-left: 20px;
 }
 
-#img-sobrenos {
-    background-image: url(imagens/estatistica.jpg);
+#img {
+    background-image: url("/static/imagens/estatistica.jpg");
     width: 430px;
     height: 480px;
 }
@@ -84,20 +84,20 @@ h1:after {
     background-color: #000055;
 }
 
-#q-1-sobrenos {
-    background-image: url(imagens/view.png);
+#q-1 {
+    background-image: url("/static/imagens/view.png");
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
-#q-2-sobrenos {
-    background-image: url(imagens/flag.png);
+#q-2 {
+    background-image: url("/static/imagens/flag.png");
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
-#q-3-sobrenos {
-    background-image: url(imagens/like.png);
+#q-3 {
+    background-image: url("/static/imagens/like.png");
     background-repeat: no-repeat;
     background-position: bottom;
 }

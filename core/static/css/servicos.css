@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Caxton Lt BT";
-    src: url("fonts/CaxtonLightBT.ttf");
+    src: url("/static/fonts/CaxtonLightBT.ttf");
     }
     
     :root {
@@ -77,7 +77,7 @@
         position: absolute;
         right: 170px;
         top: 21px;
-        background-image: url("settings.png");
+        background-image: url("/static/imagens/settings.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 50px;  

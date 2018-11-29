@@ -51,7 +51,7 @@ h1:after {
     position: absolute;
     right: 170px;
     top: 10px;
-    background-image: url(phone.png);
+    background-image: url("/static/imagens/phone.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50px;

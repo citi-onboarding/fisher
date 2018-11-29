@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $('.slider-active').slick({
-    prevArrow: '<button type="button" class="carousel-next" id="next"><img src="imagens/leftarrowangle1.svg" /></button>',
-    nextArrow: '<button type="button" class="carousel-prev"><img src="imagens/leftarrowangle1.svg" /></button>'
+    prevArrow: '<button type="button" class="carousel-next" id="next"><img src="/static/imagens/leftarrowangle1.svg" /></button>',
+    nextArrow: '<button type="button" class="carousel-prev"><img src="/static/imagens/leftarrowangle1.svg" /></button>'
 
   });
 });

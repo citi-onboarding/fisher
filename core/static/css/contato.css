@@ -1,4 +1,4 @@
-.todo {
+.todo-contato {
     background-color: #01013A;
     width: 100%;
     height: 100%;
@@ -32,7 +32,7 @@ h1:after {
 	margin-left: 20px;
 }
 
-.todo:before {
+.todo-contato:before {
     content: '';
     background-color: #F2F2F2;
     display: block;
@@ -40,7 +40,7 @@ h1:after {
     height: 70px;
 }
 
-.todo:after {
+.todo-contato:after {
     content: '';
     background-color: white;
     display: block;
@@ -57,7 +57,7 @@ h1:after {
     background-size: 50px;
 }
 
-.container {
+.container-contato {
     width: 50%;
     margin: 0 auto;
     

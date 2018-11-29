@@ -64,7 +64,7 @@
 	position: absolute;
 	right: 76px;
     top: 28px;
-	background-image: url("imagens/place.png");
+	background-image: url("/static/imagens/place.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 50px;  

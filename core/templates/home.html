@@ -135,7 +135,7 @@
 	      <div class="cascade-slider_slides">
 	        <div class="cascade-slider_item">
 	        	<div class="cascade-slider-item_image">
-	        		<img src="1.jfif" alt="">
+	        		<img src="{% static 'imagens/1.jfif' %}" alt="">
 	        	</div>
 	        	<div class="texto-slider">
 	        		<h2 class="texto-slider-titulo">Título</h2>
@@ -146,7 +146,7 @@
 	        </div>
 	     	<div class="cascade-slider_item">
 	        	<div class="cascade-slider-item_image">
-	        		<img src="2.jfif" alt="">
+	        		<img src="{% static 'imagens/2.jfif' %}" alt="">
 	        	</div>
 	        	<div class="texto-slider">
 	        		<h2 class="texto-slider-titulo">Título</h2>
@@ -156,7 +156,7 @@
 	        </div>
 	        <div class="cascade-slider_item">
 	        	<div class="cascade-slider-item_image">
-	        		<img src="3.jfif" alt="">
+	        		<img src="{% static 'imagens/3.jfif' %}" alt="">
 	        	</div>
 	        	<div class="texto-slider">
 	        		<h2 class="texto-slider-titulo">Título</h2>
@@ -166,7 +166,7 @@
 	        </div>
 	        <div class="cascade-slider_item">
 	        	<div class="cascade-slider-item_image">
-	        		<img src="4.jfif" alt="">
+	        		<img src="{% static 'imagens/4.jfif' %}" alt="">
 	        	</div>
 	        	<div class="texto-slider">
 	        		<h2 class="texto-slider-titulo">Título</h2>
@@ -176,7 +176,7 @@
 	        </div>
 	        <div class="cascade-slider_item">
 	        	<div class="cascade-slider-item_image">
-	        		<img src="5.jfif" alt="">
+	        		<img src="{% static 'imagens/5.jfif' %}" alt="">
 	        	</div>
 	        	<div class="texto-slider">
 	        		<h2 class="texto-slider-titulo">Título</h2>
@@ -186,7 +186,7 @@
 	        </div>
 	        <div class="cascade-slider_item">
 	        	<div class="cascade-slider-item_image">
-	        		<img src="6.jfif" alt="">
+	        		<img src="{% static 'imagens/6.jfif' %}" alt="">
 	        	</div>
 	        	<div class="texto-slider">
 	        		<h2 class="texto-slider-titulo">Título</h2>
@@ -196,7 +196,7 @@
 	        </div>
 	        <div class="cascade-slider_item">
 	        	<div class="cascade-slider-item_image">
-	        		<img src="7.jfif" alt="">
+	        		<img src="{% static 'imagens/7.jfif' %}" alt="">
 	        	</div>
 	        	<div class="texto-slider">
 	        		<h2 class="texto-slider-titulo">Título</h2>
@@ -208,8 +208,8 @@
 
 	      <ol class="cascade-slider_nav"></ol>
 
-	      <img src="left-arrow.png" class="cascade-slider_arrow cascade-slider_arrow-left" data-action="prev">
-	      <img src="right-arrow.png" class="cascade-slider_arrow cascade-slider_arrow-right" data-action="next">
+	      <img src="{% static 'imagens/left-arrow.png' %}" class="cascade-slider_arrow cascade-slider_arrow-left" data-action="prev">
+	      <img src="{% static 'imagens/right-arrow.png' %}" class="cascade-slider_arrow cascade-slider_arrow-right" data-action="next">
     	</div>
 	</section>
 
@@ -229,8 +229,7 @@
 	</div>
 
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="cascade-slider.js"></script>
-	<script src="main.js"></script>
+	<script src="{% static 'js/cascadeservicos.js' %}"></script>
 
 
     </div>
@@ -316,24 +315,22 @@
             PARCERIAS
         </div>
         <div class="meio" id="q-2">
-            <img src="imagens/Logo.png">
+            <img src="{% static 'imagens/Logo.png' %}">
             <div id="email">fisherconsultoriaestatistica@gmail.com</div>
             <div class="icones">
                 <div class="incon" id="tt">
-                    <img class="tam" src="imagens/face.svg">
+                    <img class="tam" src="{% static 'imagens/face.svg' %}">
                 </div>
                 <div class="incon" id="insta">
-                    <img class="tam" src="imagens/instagram.svg">
+                    <img class="tam" src="{% static 'imagens/instagram.svg' %}">
                 </div>
                 <div class="incon" id="linkedin">
-                    <img class="tam" src="imagens/linkedin.svg">
+                    <img class="tam" src="{% static 'imagens/linkedin.svg' %}">
                 </div>
             </div>
         </div>
-        <div class="local" id="q-3">
-            
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31603.607224740594!2d-34.93349726000414!3d-8.055403086396353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1966d409d415%3A0x497df2e2ee00ea52!2sUniversidade+Federal+de+Pernambuco+UFPE!5e0!3m2!1spt-BR!2sbr!4v1543076010432" width="250" height="160" frameborder="0" style="border:0" allowfullscreen></iframe>
-        
+        <div class="local" id="q-3">  
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31603.607224740594!2d-34.93349726000414!3d-8.055403086396353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1966d409d415%3A0x497df2e2ee00ea52!2sUniversidade+Federal+de+Pernambuco+UFPE!5e0!3m2!1spt-BR!2sbr!4v1543076010432" width="250" height="160" frameborder="0" style="border:0" allowfullscreen></iframe>       
         </div>
     </div>
 

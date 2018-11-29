@@ -42,7 +42,7 @@ h1:after {
 }
 
 #img {
-    background-image: url(imagens/estatistica.jpg);
+    background-image: url("/static/imagens/estatistica.jpg");
     width: 430px;
     height: 480px;
 }
@@ -85,19 +85,19 @@ h1:after {
 }
 
 #q-1 {
-    background-image: url(imagens/view.png);
+    background-image: url("/static/imagens/view.png");
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
 #q-2 {
-    background-image: url(imagens/flag.png);
+    background-image: url("/static/imagens/flag.png");
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
 #q-3 {
-    background-image: url(imagens/like.png);
+    background-image: url("/static/imagens/like.png");
     background-repeat: no-repeat;
     background-position: bottom;
 }

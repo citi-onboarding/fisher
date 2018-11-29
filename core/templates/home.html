@@ -1,44 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/base.css' %}">
-	<link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/navbar.css' %}">
-	<link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/banner.css' %}">
-	<link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/servicos.css' %}">
-	<link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/sobrenos.css' %}">
-	<link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/depoimentos.css' %}">
-	<link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/contato.css' %}">
-	<link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/footer.css' %}">
-	<title>Fisher</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/base.css' %}">
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/navbar.css' %}">
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/banner.css' %}">
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/servicos.css' %}">
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/sobrenos.css' %}">
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/depoimentos.css' %}">
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/contato.css' %}">
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/footer.css' %}">
+  <title>Fisher</title>
 </head>
+
 <body>
 
-    <div id="main-container">
-        <div id="navbar">
-            NAVBAR
+  <div id="main-container">
+    <div id="navbar">
+
+      <div id="container">
+        <div id="navbarra">
+          <div class="logo">
+            <img id="logomarca" src="imagens/logof.png">
+          </div>
+          <div class="toggle">
+            <div class="container" onclick="myfunction(this)">
+              <div class="hamburger">
+                <div class="bar1"></div>
+                <div class="bar2" id="b2"></div>
+                <div class="bar3"></div>
+              </div>
+            </div>
+          </div>
+          <nav id="nv">
+
+            <div class="navbar">
+
+              <ul>
+                <li><a href="#sobrenos" class="scroll">Sobre nós</a></li>
+                <li><a href="#servicos" class="scroll">Serviços</a></li>
+                <li><a href="#clientes" class="scroll">Clientes</a></li>
+                <li><a href="#contato" class="scroll">Contato</a></li>
+              </ul>
+
+            </div>
+          </nav>
         </div>
-        <div id="banner">
-            BANNER
-        </div>
-        <div id="sobrenos">
-            SOBRE NOS
-        </div>
-        <div id="servicos">
-            SERVIÇOS
-        </div>
-        <div id="depoimentos">
-            DEPOIMENTOS
-        </div>
-        <div id="contato">
-            CONTATO
-        </div>
-        <div id="footer>">
-            FOOTER
-        </div>
+
+      </div>
+
+
     </div>
-    <script src="{% static 'js/' %}"></script>
+    <div id="banner">
+      BANNER
+    </div>
+    <div id="sobrenos">
+      SOBRE NOS
+    </div>
+    <div id="servicos">
+      SERVIÇOS
+    </div>
+    <div id="depoimentos">
+      DEPOIMENTOS
+    </div>
+    <div id="contato">
+      CONTATO
+    </div>
+    <div id="footer>">
+      FOOTER
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="{% static 'js/base.js' %}"></script>
+  <script src="{% static 'js/navbar.js' %}"></script>
+  <script src="{% static 'js/banner.js' %}"></script>
+  <script src="{% static 'js/sobrenos.js' %}"></script>
+  <script src="{% static 'js/servicos.js' %}"></script>
+  <script src="{% static 'js/depoimentos.js' %}"></script>
+  <script src="{% static 'js/contato.js' %}"></script>
+  <script src="{% static 'js/footer.js' %}"></script>
 </body>
 </html>

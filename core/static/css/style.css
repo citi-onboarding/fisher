@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */
+
+.logo {
+    width: 12%;
+    float: left;
+    padding-left: 75px;
+    padding-top: 6px;
+}
+
+.section {
+    width: 500px;
+    height: 500px;
+    background-color: aquamarine;
+    border: 1px #000055;
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    
+}
+
+#logomarca {
+    cursor: pointer;
+}
+
+#navbarra {
+    position: fixed;
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    background: #000055;
+    text-align: right;
+}
+
+ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+ul li:hover {
+    background: #D9D9D9;
+    color: #000055;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.toggle {
+    width: 100%;
+    padding: 10px 20px;
+    background: #000055;
+    text-align: right;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 30px;
+    display: none;
+}
+
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,.bar2,.bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s ease;
+}
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px,6px);
+}
+.change .bar3 {
+    transform: rotate(45deg) translate(-5px,-5px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+
+
+
+
+@media (max-width:768px){
+    .toggle{
+        display: block;
+    }
+
+    ul {
+        width: 100%;
+        display: none;
+    }
+    ul li {
+        display:block;
+        text-align: left;
+    }
+    .active {
+        display: block;
+        border-style: solid;
+    border-width: 1px;
+    border-color: #707070;
+    }
+
+   nav {
+    width: 60%;
+    float: right;
+   }
+
+   .logo {
+       padding-left: 30px;
+   }
+
+}

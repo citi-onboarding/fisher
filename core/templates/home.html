@@ -1,38 +1,350 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" media="screen" href="cascade-slider.css">
-	<link rel="stylesheet" type="text/css" media="screen" href="style.css">
-	<title>Fisher</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/base.css' %}">
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/navbar.css' %}">
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/banner.css' %}">
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/servicosSlider.css' %}">
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/servicos.css' %}">
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/sobrenos.css' %}">
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/depoimentos.css' %}">
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/contato.css' %}">
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/footer.css' %}">
+  <title>Fisher</title>
 </head>
+
 <body>
 
-    <div id="main-container">
-        <div id="navbar">
-            NAVBAR
+  <div id="main-container">
+    <div id="navbar">
+
+      <div id="container">
+        <div id="navbarra">
+          <div class="logo">
+            <img id="logomarca" src="{% static 'imagens/logo.png' %}">
+          </div>
+          <div class="toggle">
+            <div class="container" onclick="myfunction(this)">
+              <div class="hamburger">
+                <div class="bar1"></div>
+                <div class="bar2" id="b2"></div>
+                <div class="bar3"></div>
+              </div>
+            </div>
+          </div>
+          <nav id="nv">
+
+            <div class="navbar">
+
+              <ul>
+                <li><a href="#sobrenos" class="scroll">Sobre nós</a></li>
+                <li><a href="#servicos" class="scroll">Serviços</a></li>
+                <li><a href="#clientes" class="scroll">Clientes</a></li>
+                <li><a href="#contato" class="scroll">Contato</a></li>
+              </ul>
+
+            </div>
+          </nav>
         </div>
-        <div id="banner">
-            BANNER
+
+      </div>
+
+
+    </div>
+    <div id="banner">
+
+      <div class="todo-banner">
+       
+        
+       
+        
+        <div class="banner-banner">
+        <div class="simbol-banner"></div>
+        <div class="text-banner">
+            <h1>Texto Texto Texto</h1>
+            <div class="caixa-banner">
+            <h3>Texto texto texto texto texto texto texto texto texto</h3>
+            </div>
         </div>
-        <div id="sobrenos">
-            SOBRE NOS
         </div>
-        <div id="servicos">
-            SERVIÇOS
+             
+        
+        
+    </div>
+    </div>
+    <div id="sobrenos">
+
+      <div class="tudo-sobrenos">
+    
+    <div class="up-sobrenos">
+            <h1> SOBRE NÓS </h1>
         </div>
-        <div id="depoimentos">
-            DEPOIMENTOS
-        </div>
-        <div id="contato">
-            CONTATO
-        </div>
-        <div id="footer>">
-            FOOTER
+    <div class="sobre-sobrenos">
+        <div id="img-sobrenos"></div>
+        <div id="texto-sobrenos">
+            <div class="txx-sobrenos">
+                A Estatística é bastante utilizada em 
+                diversos ramos da sociedade, no intuito de 
+                realizar pesquisas, colher dados e processá-los, 
+                analisar informações, apresentar situações através de gráficos de fácil 
+                compreensão. Os meios de comunicação, ao utilizarem gráficos, deixam a leitura mais agradável. 
+                O IBGE (Instituto Brasileiro de Geografia e Estatística) é considerado um órgão importante e conceituado na área. No intuito de conhecer e aprofundar nos estudos estatísticos precisamos conhecer alguns conceitos e fundamentos primordiais para o desenvolvimento de uma pesquisa.
+            </div>
         </div>
     </div>
 
+    <div class="icones-sobrenos">
+
+    <div class="vmv">
+        <div class="quadrado-sobrenos" id="q-1-sobrenos">
+            <div class="title-sobrenos">  Visão  </div>
+        </div>
+        <div class="quadrado-sobrenos" id="q-2-sobrenos">
+            <div class="title-sobrenos">  Missão  </div>
+        </div>
+        <div class="quadrado-sobrenos" id="q-3-sobrenos">
+            <div class="title-sobrenos">  Valores  </div>
+        </div>
+    </div>
+
+    <div class="vmv2">
+        <div class="sec" id="q-4">
+            <div class="desc">  Tornar-se uma empresa de referencia no mercado Brasileiro por meio da satisfação dos nossos clientes.  </div>
+        </div>
+        <div class="sec" id="q-5">
+            <div class="desc">  Difundir a Estatística de forma prática e acessível, mantendo o cliente a frente em seus projetos.  </div>
+        </div>
+        <div class="sec" id="q-6">
+            <div class="desc">  Comprometimento, qualidade, atenção aos detalhes, clareza nos resultados, foco no cliente, valorização dos funcionários e respeito ao meio ambiente  </div>
+        </div>
+    </div>
+    </div>
+</div>    
+    </div>
+    <div id="servicos">
+      
+        <section class="secao-servico">
+		<h1>SERVIÇOS</h1>
+		<div class="cascade-slider_container" id="cascade-slider">
+	      <div class="cascade-slider_slides">
+	        <div class="cascade-slider_item">
+	        	<div class="cascade-slider-item_image">
+	        		<img src="{% static 'imagens/1.jfif' %}" alt="">
+	        	</div>
+	        	<div class="texto-slider">
+	        		<h2 class="texto-slider-titulo">Título</h2>
+	        		<p class="texto-slider-corpo">Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
+					<button class="botao-agendamento"'>SOLICITAR AGENDAMENTO</button>
+										  
+	        	</div>
+	        </div>
+	     	<div class="cascade-slider_item">
+	        	<div class="cascade-slider-item_image">
+	        		<img src="{% static 'imagens/2.jfif' %}" alt="">
+	        	</div>
+	        	<div class="texto-slider">
+	        		<h2 class="texto-slider-titulo">Título</h2>
+	        		<p class="texto-slider-corpo">Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
+					<button class="botao-agendamento"'>SOLICITAR AGENDAMENTO</button>
+	        	</div>
+	        </div>
+	        <div class="cascade-slider_item">
+	        	<div class="cascade-slider-item_image">
+	        		<img src="{% static 'imagens/3.jfif' %}" alt="">
+	        	</div>
+	        	<div class="texto-slider">
+	        		<h2 class="texto-slider-titulo">Título</h2>
+	        		<p class="texto-slider-corpo">Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
+					<button class="botao-agendamento"'>SOLICITAR AGENDAMENTO</button>
+	        	</div>
+	        </div>
+	        <div class="cascade-slider_item">
+	        	<div class="cascade-slider-item_image">
+	        		<img src="{% static 'imagens/4.jfif' %}" alt="">
+	        	</div>
+	        	<div class="texto-slider">
+	        		<h2 class="texto-slider-titulo">Título</h2>
+	        		<p class="texto-slider-corpo">Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
+					<button class="botao-agendamento"'>SOLICITAR AGENDAMENTO</button>
+	        	</div>
+	        </div>
+	        <div class="cascade-slider_item">
+	        	<div class="cascade-slider-item_image">
+	        		<img src="{% static 'imagens/5.jfif' %}" alt="">
+	        	</div>
+	        	<div class="texto-slider">
+	        		<h2 class="texto-slider-titulo">Título</h2>
+	        		<p class="texto-slider-corpo">Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
+					<button class="botao-agendamento"'>SOLICITAR AGENDAMENTO</button>
+	        	</div>
+	        </div>
+	        <div class="cascade-slider_item">
+	        	<div class="cascade-slider-item_image">
+	        		<img src="{% static 'imagens/6.jfif' %}" alt="">
+	        	</div>
+	        	<div class="texto-slider">
+	        		<h2 class="texto-slider-titulo">Título</h2>
+	        		<p class="texto-slider-corpo">Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
+					<button class="botao-agendamento"'>SOLICITAR AGENDAMENTO</button>
+	        	</div>
+	        </div>
+	        <div class="cascade-slider_item">
+	        	<div class="cascade-slider-item_image">
+	        		<img src="{% static 'imagens/7.jfif' %}" alt="">
+	        	</div>
+	        	<div class="texto-slider">
+	        		<h2 class="texto-slider-titulo">Título</h2>
+	        		<p class="texto-slider-corpo">Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
+					<button class="botao-agendamento">SOLICITAR AGENDAMENTO</button>
+	        	</div>
+	        </div>
+	      </div>
+
+	      <ol class="cascade-slider_nav"></ol>
+
+	      <img src="{% static 'imagens/left-arrow.png' %}" class="cascade-slider_arrow cascade-slider_arrow-left" data-action="prev">
+	      <img src="{% static 'imagens/right-arrow.png' %}" class="cascade-slider_arrow cascade-slider_arrow-right" data-action="next">
+    	</div>
+	</section>
+
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+		  <span id="modal-close" class="close">&times;</span>
+		  <input class="texto-modal" type="text" placeholder="Nome" required>
+		  <input class="texto-modal" type="email" placeholder="Email" required>
+		  <select class="texto-modal" tupe="select" required>
+			<option disabled selected style="display: none">Serviço</option>
+			<option>Alguma coisa de estatistica</option>
+			  <option>Alguma outra coisa de estatistica</option>
+		  </select>
+		  <textarea id="descricao" name="Descrição" class="texto-modal" placeholder="Descrição" required></textarea>
+		</div>
+		<div class="modal-overlay"></div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="{% static 'js/cascadeservicos.js' %}"></script>
+
+
+    </div>
+    <div id="depoimentos">
+
+
+      <div class="cima-depoimentos">
+            <h1> DEPOIMENTOS </h1>
+        </div>
+    <div class="depoimentos-depoimentos">
+
+    
+
+    <div class="baixo-depoimentos">
+
+        <div class="quadrilateros-depoimentos">
+        <div class="rombo-depoimentos" id="img"></div>
+        <div class="losango-depoimentos"></div>
+        </div>
+        
+        <div class="aspas">"</div>
+
+        <div class="box-depoimentos">
+
+        <div class="slider-active">
+            
+            <div class="slider-item">
+                    Texto texto texto texto texto texto texto texto texto 
+                    texto texto texto texto texto texto texto texto texto 
+                    texto texto texto texto texto texto texto texto texto 
+                    texto texto texto texto texto texto texto texto texto 
+                    texto texto texto texto  
+                <div class="rodape"> Texto texto texto texto texto texto . </div>  
+            </div>
+            <div class="slider-item">
+                
+                    Texto texto texto texto texto texto texto texto texto 
+                    texto texto texto texto texto texto texto texto texto 
+                    texto texto texto texto texto texto texto texto texto 
+                    texto texto texto texto texto texto texto texto texto 
+                    texto texto texto texto  
+                 <div class="rodape"> Texto texto texto texto texto texto . </div>  
+                
+            </div>
+            <div class="slider-item">
+                
+                    Texto texto texto texto texto texto texto texto texto 
+                    texto texto texto texto texto texto texto texto texto 
+                    texto texto texto texto texto texto texto texto texto
+                    texto texto texto texto texto texto texto texto texto 
+                    texto texto texto texto  
+                 <div class="rodape"> Texto texto texto texto texto texto . </div>  
+                
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div id="contato">
+
+
+      <section class="todo-contato">
+        <h1>Contato</h1>
+    <div class="container-contato">  
+  <form action="#" class="form-contact" method="post" tabindex="1">  
+     <input type="text" class="form-contact-input" name="nome" placeholder="Nome*" required />  
+     <input type="email" class="form-contact-input" name="email" placeholder="Email*" required />  
+     <input type="tel" class="form-contact-input" name="tel" placeholder="Telefone" />  
+     <textarea class="form-contact-textarea" name="conteudo" placeholder="Descrição*" required></textarea>  
+     <button type="submit" class="form-contact-button">Enviar</button>  
+  </form>  
+</div>  
+</section>
+
+
+    </div>
+    <div id="footer>">
+
+
+      <div class="footer-footer">
+        <div class="quadrado-footer" id="parcerias">
+            PARCERIAS
+        </div>
+        <div class="meio" id="q-2">
+            <img src="{% static 'imagens/Logo.png' %}">
+            <div id="email">fisherconsultoriaestatistica@gmail.com</div>
+            <div class="icones">
+                <div class="incon" id="tt">
+                    <img class="tam" src="{% static 'imagens/face.svg' %}">
+                </div>
+                <div class="incon" id="insta">
+                    <img class="tam" src="{% static 'imagens/instagram.svg' %}">
+                </div>
+                <div class="incon" id="linkedin">
+                    <img class="tam" src="{% static 'imagens/linkedin.svg' %}">
+                </div>
+            </div>
+        </div>
+        <div class="local" id="q-3">  
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31603.607224740594!2d-34.93349726000414!3d-8.055403086396353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1966d409d415%3A0x497df2e2ee00ea52!2sUniversidade+Federal+de+Pernambuco+UFPE!5e0!3m2!1spt-BR!2sbr!4v1543076010432" width="250" height="160" frameborder="0" style="border:0" allowfullscreen></iframe>       
+        </div>
+    </div>
+
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="{% static 'js/base.js' %}"></script>
+  <script src="{% static 'js/navbar.js' %}"></script>
+  <script src="{% static 'js/banner.js' %}"></script>
+  <script src="{% static 'js/sobrenos.js' %}"></script>
+  <script src="{% static 'js/servicos.js' %}"></script>
+  <script src="{% static 'js/depoimentos.js' %}"></script>
+  <script src="{% static 'js/contato.js' %}"></script>
+  <script src="{% static 'js/footer.js' %}"></script>
 </body>
 </html>

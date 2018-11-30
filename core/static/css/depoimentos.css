@@ -17,9 +17,9 @@
 
 #aspas {
   display: flex;
-  font-size: 20rem;
+  font-size: 17rem;
   position: absolute;
-  left: 9px;
+  left: 130px;
   color: #9d9db0;
   padding-top: 73px;
 }
@@ -105,14 +105,14 @@
 }
 
 .carousel-prev {
-  right: -9vw;
+  right: -5vw;
    transform: rotate(180deg);
   bottom: 9vw;
   z-index: 1000;
 }
 
 .carousel-next {
-   left: -9vw;
+   left: -5vw;
    bottom: 9vw;
 }
 
@@ -130,4 +130,12 @@ button.carousel-prev.slick-arrow {
 
 button.carousel-next.slick-arrow {
   outline: none;
+}
+
+@media (min-width: 1125px) {
+  
+  #carrossel-container {
+    width: 886.39px;
+  }
+
 }

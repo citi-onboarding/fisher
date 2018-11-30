@@ -139,7 +139,14 @@
 
    .quadrado-footer {
     width: 150px;
-}
+  }
 
+  .meio-footer {
+    margin-bottom: 30px;
+  }
+
+  .local-footer {
+    margin-bottom: 20px;
+  }
 
 }

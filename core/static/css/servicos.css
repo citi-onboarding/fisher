@@ -16,32 +16,7 @@
         font-family: 'Caxton Lt BT';
     }
     
-    h1 {
-        align-items: center;
-        color: white;
-        display: flex;
-        font-size: 70px;
-        font-weight: 300;
-        justify-content: center;
-        margin-bottom: 100px;
-        margin-top: 70px;
-        text-align: center;
-    }
     
-    h1:before, h1:after {
-        content: '';
-        height: 4px;
-        background-color: white;
-        width: 55px;
-    }
-    
-    h1:before {
-        margin-right: 20px;
-    }
-    
-    h1:after {
-        margin-left: 20px;
-    }
     
     /*.frase {
         color: white;

@@ -5,6 +5,7 @@ body {
 
 /* NAVBAR */
 
+
 .logo {
     width: 12%;
     float: left;
@@ -32,6 +33,7 @@ body {
 #navbarra {
     position: fixed;
     width: 100%;
+    z-index: 5;
 }
 
 nav{
@@ -126,8 +128,13 @@ ul li a {
     float: right;
    }
 
-   .logo {
-       padding-left: 30px;
-   }
+  
 
+
+}
+
+@media (max-width:600px) {
+  #navbarra {
+    width: 100vw;
+  }
 }

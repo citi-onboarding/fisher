@@ -1,5 +1,6 @@
 (function($) {
     $.fn.cascadeSlider = function(opt) {
+      console.log("uis");
       var $this = this,
         itemClass = opt.itemClass || 'cascade-slider_item',
         arrowClass = opt.arrowClass || 'cascade-slider_arrow',

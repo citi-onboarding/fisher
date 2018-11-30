@@ -15,7 +15,7 @@
 }
 
 
-#img {
+#img-sobrenos {
     background-image: url("/static/imagens/estatistica.jpg");
     width: 430px;
     height: 480px;
@@ -58,19 +58,19 @@
     background-color: #000055;
 }
 
-#q-1 {
+#q-1-sobrenos {
     background-image: url("/static/imagens/view.png");
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
-#q-2 {
+#q-2-sobrenos {
     background-image: url("/static/imagens/flag.png");
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
-#q-3 {
+#q-3-sobrenos {
     background-image: url("/static/imagens/like.png");
     background-repeat: no-repeat;
     background-position: bottom;

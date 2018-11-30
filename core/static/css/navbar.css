@@ -128,8 +128,13 @@ ul li a {
     float: right;
    }
 
-   .logo {
-       padding-left: 30px;
-   }
+  
 
+
+}
+
+@media (max-width:600px) {
+  #navbarra {
+    width: 100vw;
+  }
 }

@@ -6,6 +6,25 @@
     text-align: left;
 }
 
+#banner-h1 {
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 5rem;
+    font-weight: 300;
+    justify-content: left;
+    margin-bottom: 100px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+#banner-h1:before, #banner-h1:after {
+	
+	height: 0;
+	background-color: transparent;
+	width: 0;
+}
+
 .banner-banner {
     width: 100%;
     height: 100%;
@@ -34,6 +53,10 @@
     width: 55vw;
     
     padding-bottom: 6vw;
+}
+
+h3 {
+  font-weight: 300;
 }
 
 .simbol-banner {
@@ -69,8 +92,11 @@
   left: 40%;
   right: 40%;
   z-index: 3;
-  
-  background-color: #323458;
+  background-image: url("/static/imagens/fluctuation.png");
+  background-repeat: no-repeat;
+  background-size: 90px;
+  background-position: center;
+  background-color: #000055;
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
@@ -92,9 +118,6 @@
         padding-top: 50px;
     }
 
-    .todo-banner {
-        height: 90vh;
-    }
 }
 
 @media (max-width: 500px) {

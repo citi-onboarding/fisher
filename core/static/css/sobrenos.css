@@ -128,7 +128,7 @@
 @media (max-width: 1040px) {
 
     .txx-sobrenos {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .quadrado-sobrenos {
@@ -173,8 +173,8 @@
     }
 
     #img-sobrenos {
-        width: 380px;
-        height: 430px;
+        width: 370px;
+        height: 420px;
     }
 
     h1 {
@@ -190,6 +190,43 @@
     #q-1-sobrenos, #q-2-sobrenos, #q-3-sobrenos {
         background-size: 60px;
     }
+
+    #img-sobrenos {
+      width: 330px;
+      height: 380px;
+  }
+
+  .txx-sobrenos {
+    font-size: 0.7rem;
+}
+
+.quadrado-sobrenos {
+  width: 15vw;
+  height: 15vw;
+}
+
+.title-sobrenos {
+  font-size: 1.5rem;
+}
+
+#q-1-sobrenos {
+  background-size: 50px;
+}
+
+#q-2-sobrenos {
+  background-size: 50px;
+}
+
+#q-3-sobrenos {
+  background-size: 50px;
+}
+
+.desc {
+  
+font-size: 0.5rem;
+
+}
+
 }
 
 @media (max-width: 550px) {
@@ -225,4 +262,69 @@
         display: flex;
         flex-direction: column;
     }
+
+    #img-sobrenos {
+      width: 230px;
+      height: 300px;
+  }
+  .desc {
+  
+    font-size: 0.4rem;
+    
+    }
+}
+
+@media (max-width: 500px) {
+  .quadrado-sobrenos {
+    width: 15vw;
+    height: 15vw;
+  }
+  
+  .title-sobrenos {
+    font-size: 1rem;
+  }
+  
+  #q-1-sobrenos {
+    background-size: 40px;
+  }
+  
+  #q-2-sobrenos {
+    background-size: 40px;
+  }
+  
+  #q-3-sobrenos {
+    background-size: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .desc {
+  
+    font-size: 0.2rem;
+    
+    }
+}
+
+@media (max-width: 380px){
+  .quadrado-sobrenos {
+    width: 15vw;
+    height: 15vw;
+  }
+  
+  .title-sobrenos {
+    font-size: 0.8rem;
+  }
+  
+  #q-1-sobrenos {
+    background-size: 30px;
+  }
+  
+  #q-2-sobrenos {
+    background-size: 30px;
+  }
+  
+  #q-3-sobrenos {
+    background-size: 30px;
+  }
+}
 }

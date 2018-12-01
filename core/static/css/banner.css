@@ -60,8 +60,7 @@ h3 {
 }
 
 .simbol-banner {
-    padding: 20px;
-    padding-top: 57px;
+    margin-top: 70px;
     display: block;
     width: 300px;
     height: 300px;
@@ -110,18 +109,163 @@ h3 {
         padding-left: 130px;
        
     }
-} 
 
-@media (max-width: 760px) {
-    .text-banner {
-        font-size: 1rem;
-        padding-top: 50px;
+    #losango-banner {
+      background-size: 70px;
     }
+    
+    #pai-losango {
+      bottom: -70px
+    }
+
+    .simbol-banner {
+      width: 310px;
+      height: 310px;
+      background-size: 70vw;
+      margin-top: 70px;
+    }
+}
+
+@media (max-width: 1000px) {
+  #losango-banner {
+    background-size: 60px;
+    top: 80%;
+  }
+
+  #pai-losango {
+    bottom: -60px
+  }
+
+  .simbol-banner {
+    width: 320px;
+    height: 320px;
+    background-size: 80vw;
+    margin-top: 50px;
+  }
+
+  #banner-h1 {
+    
+    font-size: 3rem;
+    margin-bottom: 100px;
+    padding-top: 50px;
+ 
+}
+}
+
+@media (max-width: 800px) {
+  #banner-h1 {
+    
+    margin-bottom: 100px;
+    padding-top: 10px;
+ 
+}
+}
+
+@media (max-width: 720px) {
+    .text-banner {
+        
+        
+    }
+
+    .todo-banner {
+      height:80vw;
+  }
+
+  .banner-banner {
+   
+    background-size: 210vw;
+    
+}
+
+#losango-banner {
+  width: 20vw;
+  height: 20vw;
+  
+}
+
+#pai-losango {
+  bottom: -50px
+}
+
+.simbol-banner {
+  width: 380px;
+  height: 380px;
+  background-size: 150vw;
+  margin-top: 80px;
+}
+
+}
+
+@media (max-width: 600px) {
+  .todo-banner {
+    height: 120vw;
+}
+
+.banner-banner {
+ 
+  background-size: 250vw;
+  
+}
+
+#losango-banner {
+  width: 25vw;
+  height: 25vw;
+  
+}
+
+.simbol-banner {
+  width: 400px;
+  height: 400px;
+  background-size: 200vw;
+  margin-top: 50px;
+}
 
 }
 
 @media (max-width: 500px) {
-    .text-banner {
+    .banner-h1 {
         font-size: 0.7rem;
     }
+
+    #losango-banner {
+      width: 30vw;
+      height: 30vw;
+      
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
 }
+
+@media (max-width: 400px) {
+  #losango-banner {
+    width: 40vw;
+    height: 40vw;
+    
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+  }
+
+  #banner-h1 {
+    font-size: 1.6rem;
+  }
+
+}
+
+@media (max-width: 380px) {
+  #banner-h1 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 330px) {
+  h3 {
+    font-size: 1rem;
+  }
+}
+

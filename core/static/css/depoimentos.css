@@ -280,7 +280,7 @@ button.carousel-next.slick-arrow {
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 345px) {
   #losango-pequeno {
     width: 32px;
     height: 32px;

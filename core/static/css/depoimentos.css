@@ -144,6 +144,16 @@ button.carousel-next.slick-arrow {
   .carousel-next img, .carousel-prev img {
     width: 40px;
  }
+
+ #aspas {
+ 
+  font-size: 15rem;
+  
+  left: 40px;
+  
+  padding-top: 73px;
+}
+
 }
 
 @media (max-width: 927px) {
@@ -184,6 +194,8 @@ button.carousel-next.slick-arrow {
   #losango-pequeno {
     width: 50px;
     height: 50px;
+    top: 0px;
+    right: -18px;
     
   }
   
@@ -210,9 +222,9 @@ button.carousel-next.slick-arrow {
   }
 
   #losango-pequeno {
-    width: 40px;
-    height: 40px;
-    
+    width: 44px;
+    height: 44px;
+    right: -15px;
   }
   
   #avatar-imagem {
@@ -233,17 +245,25 @@ button.carousel-next.slick-arrow {
     height: 40px;
     
   }
+
+  .carousel-prev, .carousel-next {
+    
+    bottom: 20vw;
+   
+  }
   
   #avatar-imagem {
     width: 160px;
     height: 160px;
    
   }
-
+  .carousel-next img, .carousel-prev img {
+    width: 20px;
+ }
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 501px) {
   .carousel-next img, .carousel-prev img {
     width: 20px;
  }
@@ -251,7 +271,15 @@ button.carousel-next.slick-arrow {
  #losango-pequeno {
   width: 40px;
   height: 40px;
+  right: -15px;
+  top: -15px;
   
+}
+
+.carousel-prev, .carousel-next {
+    
+  bottom: 26vw;
+ 
 }
 
 #avatar-imagem {
@@ -295,5 +323,14 @@ button.carousel-next.slick-arrow {
   .slider-item {
     font-size: 0.9rem;
     line-height: 17px;
+  }
+
+  #aspas {
+ 
+    font-size: 5rem;
+    
+    left: 5px;
+    
+    padding-top: 80px;
   }
 }

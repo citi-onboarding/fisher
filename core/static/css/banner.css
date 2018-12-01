@@ -60,8 +60,7 @@ h3 {
 }
 
 .simbol-banner {
-    padding: 20px;
-    padding-top: 57px;
+    margin-top: 70px;
     display: block;
     width: 300px;
     height: 300px;
@@ -118,6 +117,13 @@ h3 {
     #pai-losango {
       bottom: -70px
     }
+
+    .simbol-banner {
+      width: 310px;
+      height: 310px;
+      background-size: 70vw;
+      margin-top: 70px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -129,12 +135,36 @@ h3 {
   #pai-losango {
     bottom: -60px
   }
+
+  .simbol-banner {
+    width: 320px;
+    height: 320px;
+    background-size: 80vw;
+    margin-top: 50px;
+  }
+
+  #banner-h1 {
+    
+    font-size: 3rem;
+    margin-bottom: 100px;
+    padding-top: 50px;
+ 
+}
+}
+
+@media (max-width: 800px) {
+  #banner-h1 {
+    
+    margin-bottom: 100px;
+    padding-top: 10px;
+ 
+}
 }
 
 @media (max-width: 720px) {
     .text-banner {
-        font-size: 1rem;
-        padding-top: 50px;
+        
+        
     }
 
     .todo-banner {
@@ -157,6 +187,13 @@ h3 {
   bottom: -50px
 }
 
+.simbol-banner {
+  width: 380px;
+  height: 380px;
+  background-size: 150vw;
+  margin-top: 80px;
+}
+
 }
 
 @media (max-width: 600px) {
@@ -175,6 +212,14 @@ h3 {
   height: 25vw;
   
 }
+
+.simbol-banner {
+  width: 400px;
+  height: 400px;
+  background-size: 200vw;
+  margin-top: 50px;
+}
+
 }
 
 @media (max-width: 500px) {

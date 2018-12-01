@@ -139,3 +139,198 @@ button.carousel-next.slick-arrow {
   }
 
 }
+
+@media (max-width: 1085px) {
+  .carousel-next img, .carousel-prev img {
+    width: 40px;
+ }
+
+ #aspas {
+ 
+  font-size: 15rem;
+  
+  left: 40px;
+  
+  padding-top: 73px;
+}
+
+}
+
+@media (max-width: 927px) {
+ 
+
+  .slider-item {
+    font-size: 1.3rem;
+    line-height: 30px;
+  }
+
+  .carousel-next img, .carousel-prev img {
+    width: 40px;
+ }
+}
+
+@media (max-width: 850px) {
+ 
+  .carousel-next img, .carousel-prev img {
+    width: 30px;
+ }
+
+ #aspas {
+  
+  font-size: 13rem;
+  
+}
+
+}
+
+@media (max-width: 769px) {
+  
+  .slider-item {
+    font-size: 1.1rem;
+    line-height: 30px;
+  }
+
+
+  #losango-pequeno {
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    right: -18px;
+    
+  }
+  
+  #avatar-imagem {
+    width: 190px;
+    height: 190px;
+   
+  }
+  #aspas {
+    
+    font-size: 10rem;
+    
+  }
+
+}
+
+
+@media (max-width: 643px) {
+  
+  .carousel-prev, .carousel-next {
+    
+    bottom: 30vw;
+   
+  }
+
+  #losango-pequeno {
+    width: 44px;
+    height: 44px;
+    right: -15px;
+  }
+  
+  #avatar-imagem {
+    width: 180px;
+    height: 180px;
+   
+  }
+
+}
+
+@media (max-width: 580px) {
+  .slider-item {
+    font-size: 0.9rem;
+    line-height: 25px;
+  }
+  #losango-pequeno {
+    width: 40px;
+    height: 40px;
+    
+  }
+
+  .carousel-prev, .carousel-next {
+    
+    bottom: 20vw;
+   
+  }
+  
+  #avatar-imagem {
+    width: 160px;
+    height: 160px;
+   
+  }
+  .carousel-next img, .carousel-prev img {
+    width: 20px;
+ }
+
+}
+
+@media (max-width: 501px) {
+  .carousel-next img, .carousel-prev img {
+    width: 20px;
+ }
+ 
+ #losango-pequeno {
+  width: 40px;
+  height: 40px;
+  right: -15px;
+  top: -15px;
+  
+}
+
+.carousel-prev, .carousel-next {
+    
+  bottom: 26vw;
+ 
+}
+
+#avatar-imagem {
+  width: 140px;
+  height: 140px;
+ 
+}
+
+}
+
+@media (max-width: 400px) {
+  #losango-pequeno {
+    width: 35px;
+    height: 35px;
+    
+  }
+  
+  #avatar-imagem {
+    width: 130px;
+    height: 130px;
+   
+  }
+  .slider-item {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 345px) {
+  #losango-pequeno {
+    width: 32px;
+    height: 32px;
+    
+  }
+  
+  #avatar-imagem {
+    width: 120px;
+    height: 120px;
+   
+  }
+  .slider-item {
+    font-size: 0.9rem;
+    line-height: 17px;
+  }
+
+  #aspas {
+ 
+    font-size: 5rem;
+    
+    left: 5px;
+    
+    padding-top: 80px;
+  }
+}

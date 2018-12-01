@@ -223,7 +223,7 @@ h3 {
 }
 
 @media (max-width: 500px) {
-    .text-banner {
+    .banner-h1 {
         font-size: 0.7rem;
     }
 
@@ -231,6 +231,10 @@ h3 {
       width: 30vw;
       height: 30vw;
       
+    }
+
+    h3 {
+      font-size: 1.5rem;
     }
 
 }
@@ -241,5 +245,11 @@ h3 {
     height: 40vw;
     
   }
+
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+  }
+
 }
 

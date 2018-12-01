@@ -110,18 +110,91 @@ h3 {
         padding-left: 130px;
        
     }
-} 
 
-@media (max-width: 760px) {
+    #losango-banner {
+      background-size: 70px;
+    }
+    
+    #pai-losango {
+      bottom: -70px
+    }
+}
+
+@media (max-width: 1000px) {
+  #losango-banner {
+    background-size: 60px;
+    top: 80%;
+  }
+
+  #pai-losango {
+    bottom: -60px
+  }
+}
+
+@media (max-width: 720px) {
     .text-banner {
         font-size: 1rem;
         padding-top: 50px;
     }
 
+    .todo-banner {
+      height:80vw;
+  }
+
+  .banner-banner {
+   
+    background-size: 210vw;
+    
+}
+
+#losango-banner {
+  width: 20vw;
+  height: 20vw;
+  
+}
+
+#pai-losango {
+  bottom: -50px
+}
+
+}
+
+@media (max-width: 600px) {
+  .todo-banner {
+    height: 120vw;
+}
+
+.banner-banner {
+ 
+  background-size: 250vw;
+  
+}
+
+#losango-banner {
+  width: 25vw;
+  height: 25vw;
+  
+}
 }
 
 @media (max-width: 500px) {
     .text-banner {
         font-size: 0.7rem;
     }
+
+    #losango-banner {
+      width: 30vw;
+      height: 30vw;
+      
+    }
+
 }
+
+@media (max-width: 400px) {
+  #losango-banner {
+    width: 40vw;
+    height: 40vw;
+    
+  }
+}
+

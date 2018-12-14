@@ -19,7 +19,7 @@ $(document).ready(function () {
 
 
 $('.container').click(function () {
-    $('ul').slideToggle("slow", function () {
+    $("#nav-mobile").slideToggle("slow", function () {
         // Animation complete.
     });
 });

@@ -21,42 +21,38 @@
 
 <body>
 
-  <div id="main-container">
-    <div id="navbar">
-
-      <div id="container">
-        <div id="navbarra">
-          <div class="logo">
-            <img id="logomarca" src="{% static 'imagens/logof.png' %}">
-          </div>
-          <div class="toggle">
-            <div class="container" onclick="myfunction(this)">
-              <div class="hamburger">
-                <div class="bar1"></div>
-                <div class="bar2" id="b2"></div>
-                <div class="bar3"></div>
-              </div>
-            </div>
-          </div>
-          <nav id="nv">
-
-            <div class="navbar">
-
-              <ul>
-                <li><a href="#sobrenos" class="scroll">Sobre nós</a></li>
-                <li><a href="#servicos" class="scroll">Serviços</a></li>
-                <li><a href="#clientes" class="scroll">Clientes</a></li>
-                <li><a href="#contato" class="scroll">Contato</a></li>
-              </ul>
-
-            </div>
-          </nav>
+    <nav id="navbar">
+      <div id="nav">
+        <div class="nav-logo">
+            <img src="{% static 'imagens/logof.png' %}">
         </div>
-
+        <div class="nav-container">
+          <ul>
+            <a href="#sobrenos"> Sobre Nós </a>
+            <a href=""> Serviços </a>
+            <a href=""> Clientes </a>
+            <a href=""> Contatos </a>
+          </ul>
+        </div>
+        <div class="toggle">
+          <div class="container" onclick="myfunction(this)">
+            <div class="hamburger">
+              <div class="bar1"></div>
+              <div class="bar2" id="b2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
+        </div>
       </div>
-
-
-    </div>
+      <div id="nav-mobile">
+          <ul>
+            <a href="#sobrenos"> Sobre Nós </a>
+            <a href=""> Serviços </a>
+            <a href=""> Clientes </a>
+            <a href=""> Contatos </a>
+          </ul>
+      </div>
+    </nav>
     <div id="banner">
 
       <div class="todo-banner">

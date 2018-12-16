@@ -1,7 +1,14 @@
-.footer-footer {
-    width: 100%;
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #F2F2F2;
-    height: 270px;
+}
+
+.footer-footer {
+    width: 95%;
+    height: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -46,24 +53,38 @@
     font-size: 1.2rem;
 }
 
-.local-footer:after {
-    content: '';
-	background-color: #01013A;
-	display: block;
-	transform: rotate(45deg);
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	right: 76px;
-    top: 28px;
-	background-image: url("/static/imagens/place.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 50px;  
+.local {
+    position: relative;
+}
+
+#map-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background-color: #000055;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    background-size: 40px;  
+    transform: rotate(45deg);
+}
+
+#map-icon img{
+    transform: rotate(-45deg);
+    width: 30px;
 }
 
 #fisher-footer {
     width: 250px;
+}
+
+.footer-footer iframe {
+    width: 250px;
+    height: 200px;
 }
 
 @media(max-width: 1050px){
@@ -76,34 +97,57 @@
     }
 
     #email-footer {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .tam-footer {
         width: 40px;
         height: 40px;
     }
+
+    .footer-footer iframe {
+        width: 230px;
+        height: 200px;
+    }
 }
 
 @media(max-width: 850px){
     .footer-footer {
         flex-direction: column;
-        height: 600px;
+        height: auto;
+    }
+
+    .footer-footer > div {
+        padding: 30px 0;
+    }
+
+    #map-icon {
+        height: 40px;
+        width: 40px;
+        top: 10px;
+        right: -20px;
+    }
+
+    #map-icon img {
+        width: 25px;
+    }
+
+    #parcerias {
+        order: 1;
+    }
+    
+    #q-2-footer {
+        order: 3;
+    }
+    
+    #q-3-footer {
+        order: 2;
     }
 }
 
 @media (max-width: 400px) {
-    #parcerias {
-        order: 1;
+    .footer-footer iframe {
+        width: 220px;
     }
-
-    #q-2-footer {
-        order: 3;
-    }
-
-    #q-3-footer {
-        order: 2;
-    }
-
    
 }

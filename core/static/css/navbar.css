@@ -5,77 +5,65 @@ body {
 
 /* NAVBAR */
 
-
-.logo {
-    width: 12%;
-    float: left;
-    padding-left: 75px;
-    padding-top: 6px;
-}
-
-.section {
-    width: 500px;
-    height: 500px;
-    background-color: aquamarine;
-    border: 1px #000055;
-}
-
-.navbar {
+#navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 100%;
-    
-}
-
-#logomarca {
-    cursor: pointer;
-}
-
-#navbarra {
     position: fixed;
-    width: 100%;
-    z-index: 5;
+    padding: 7px 0;
+    z-index: 1000;
+    background-color: #000055;
 }
 
-nav{
-    width: 100%;
-    background: #000055;
-    text-align: right;
-}
-
-ul {
+#nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     width: 80%;
-    margin: 0 auto;
-    padding: 0;
-    display: block;
 }
 
-ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 20px;
+.nav-logo img{
+   width: 120px;
 }
 
-ul li:hover {
-    font-weight: bold;
+.nav-container ul,
+#nav-mobile ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
 }
 
-ul li a {
+.nav-container ul a,
+#nav-mobile ul a {
+    transition: all 0.2s linear;
     color: white;
     text-decoration: none;
+    margin: 0 20px;
+    border-bottom: 1px solid #000055;
 }
 
+.nav-container ul a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+#nav-mobile,
 .toggle {
-    width: 100%;
-    padding: 10px 20px;
-    background: #000055;
-    text-align: right;
-    box-sizing: border-box;
-    color: #fff;
-    font-size: 30px;
     display: none;
 }
 
+#nav-mobile ul {
+    flex-direction: column;
+    justify-content: space-around;
+}
 
+#nav-mobile ul a {
+    padding: 10px;
+}
 
 .container {
     display: inline-block;
@@ -99,41 +87,12 @@ ul li a {
     opacity: 0;
 }
 
-
-
-
-@media (max-width:768px){
-    .toggle{
-        display: block;
-    }
-
-    ul {
-        width: 100%;
+@media(max-width: 850px){
+    .nav-container {
         display: none;
     }
-    ul li {
-        display:block;
-        text-align: left;
+
+    .toggle {
+        display: inline-block;
     }
-    .active {
-        display: block;
-        border-style: solid;
-    border-width: 1px;
-    border-color: #707070;
-    }
-
-   nav {
-    width: 60%;
-    float: right;
-   }
-
-  
-
-
-}
-
-@media (max-width:600px) {
-  #navbarra {
-    width: 100vw;
-  }
 }

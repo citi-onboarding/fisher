@@ -1,18 +1,19 @@
-.footer-footer {
-    width: 100%;
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #F2F2F2;
-    height: 270px;
+}
+
+.footer-footer {
+    width: 95%;
+    height: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.quadrado-footer {
-    width: 100px;
-    height: 170px;
-    margin: 20px;
 }
 
 #parcerias {
@@ -31,122 +32,122 @@
 .icones-footer {
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-between;
+    width: 80%;
 }
 
-#tt {
-    padding-right: 80px;
-}
-
-#insta {
-    padding-right: 70px;
+.quadrado-footer {
+    text-align: center;
+    width: 250px;
 }
 
 .tam-footer {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
 }
 
 #email-footer {
-    padding: 10px;
+    padding: 20px 10px;
     color: #000055;
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
-.local-footer:after {
-    content: '';
-	background-color: #01013A;
-	display: block;
-	transform: rotate(45deg);
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	right: 76px;
-    top: 28px;
-	background-image: url("/static/imagens/place.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 50px;  
+.local {
+    position: relative;
+}
+
+#map-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background-color: #000055;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    background-size: 40px;  
+    transform: rotate(45deg);
+}
+
+#map-icon img{
+    transform: rotate(-45deg);
+    width: 30px;
 }
 
 #fisher-footer {
-    width: 247px;
-    height: 85px;
+    width: 250px;
 }
 
-@media (max-width: 400px) {
+.footer-footer iframe {
+    width: 250px;
+    height: 200px;
+}
+
+@media(max-width: 1050px){
+    #parcerias {
+        font-size: 1.4rem;
+    }
+
+    #fisher-footer {
+        width: 180px;
+    }
+
+    #email-footer {
+        font-size: 0.9rem;
+    }
+
+    .tam-footer {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-footer iframe {
+        width: 230px;
+        height: 200px;
+    }
+}
+
+@media(max-width: 850px){
+    .footer-footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer-footer > div {
+        padding: 30px 0;
+    }
+
+    #map-icon {
+        height: 40px;
+        width: 40px;
+        top: 10px;
+        right: -20px;
+    }
+
+    #map-icon img {
+        width: 25px;
+    }
+
     #parcerias {
         order: 1;
     }
-
+    
     #q-2-footer {
         order: 3;
     }
-
+    
     #q-3-footer {
         order: 2;
     }
-
-    .tam-footer {
-        width: 30px;
-        height: 30px;
-    }
-
-    #fisher-footer {
-        width: 147px;
-        height: 55px;
-    }
-
-    #email-footer {
-        font-size: 0.6rem;
-    }
-
-    #parcerias {
-        font-size: 1.2rem;
-    }
-
-    .quadrado-footer {
-        width: 120px;
-    }
-
-   
 }
 
-@media(max-width: 360px) {
-    .tam-footer {
-        width: 20px;
-        height: 20px;
+@media (max-width: 400px) {
+    .footer-footer iframe {
+        width: 220px;
     }
-
-    #fisher-footer {
-        width: 147px;
-        height: 55px;
-    }
-
-    #email-footer {
-        font-size: 0.4rem;
-    }
-
-    #parcerias {
-        font-size: 1.5rem;
-    }
-
-   iframe {
-       width: 180px;
-       height: 130px;
-   }
-
-   .quadrado-footer {
-    width: 150px;
-  }
-
-  .meio-footer {
-    margin-bottom: 30px;
-  }
-
-  .local-footer {
-    margin-bottom: 20px;
-  }
-
+   
 }

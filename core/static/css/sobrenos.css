@@ -1,5 +1,9 @@
 #sobrenos {
     background-color: #fbfbfb;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .tudo-sobrenos {
@@ -279,6 +283,7 @@
     text-align: center;
     z-index: 10 !important;
     line-height: 30px;
+
 }
 
 #bluebar {
@@ -363,5 +368,12 @@
 @media(max-width: 550px){
     .card-description {
         padding: 30px 10px;
+    }
+}
+
+@media(min-width: 1400px) {
+    .tudo-sobrenos,
+    #mvv {
+        width: 1400px;
     }
 }

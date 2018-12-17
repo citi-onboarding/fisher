@@ -41,6 +41,7 @@
     padding-left: -80px;
     font-family: 'Roboto', sans-serif;
     color: #0E105B;
+    line-height: 30px;
 }
 
 .quadrado-sobrenos {
@@ -277,6 +278,7 @@
     font-size: 1.3rem;
     text-align: center;
     z-index: 10 !important;
+    line-height: 30px;
 }
 
 #bluebar {

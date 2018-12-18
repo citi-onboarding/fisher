@@ -124,39 +124,15 @@
         <div id="losango-pequeno"></div>
       </div>
       <div id="carrossel-depoimentos">
-
         <div class="slider-active">
-
-          <div class="slider-item">
+          {% for depoimento in depoimentos %}
+          <div class="slider-item" imgurl="{{ depoimento.image }}" index="{{ forloop.counter0 }}">
             <div id="slider-container-depoimentos">
-              Texto texto texto texto texto texto texto texto texto
-              texto texto texto texto texto texto texto texto texto
-              texto texto texto texto texto texto texto texto texto
-              texto texto texto texto texto texto texto texto texto
-              texto texto texto texto
-              <div class="rodape"> Texto texto texto texto texto texto . </div>
+              {{ depoimento.conteudo }}
+              <div class="rodape">{{ depoimento.autor }}</div>
             </div>
           </div>
-          <div class="slider-item">
-
-            Texto texto texto texto texto texto texto texto texto
-            texto texto texto texto texto texto texto texto texto
-            texto texto texto texto texto texto texto texto texto
-            texto texto texto texto texto texto texto texto texto
-            texto texto texto texto
-            <div class="rodape"> Texto texto texto texto texto texto . </div>
-
-          </div>
-          <div class="slider-item">
-
-            Texto texto texto texto texto texto texto texto texto
-            texto texto texto texto texto texto texto texto texto
-            texto texto texto texto texto texto texto texto texto
-            texto texto texto texto texto texto texto texto texto
-            texto texto texto texto
-            <div class="rodape"> Texto texto texto texto texto texto . </div>
-
-          </div>
+          {% endfor %}
         </div>
       </div>
 

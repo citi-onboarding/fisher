@@ -25,8 +25,8 @@ class MVV(models.Model):
 
 class Depoimento(models.Model):
     category = models.CharField('Categoria', max_length = 50, default = 'Depoimento')
+    autor = models.CharField('Autor', max_length=50, default='')
     conteudo = models.TextField('Conteúdo', max_length = 500, default='')
-    autor = models.TextField('Autor', max_length=50, default='')
     image = models.ImageField('Foto Autor', upload_to='depoimentos/', null=True)
 
     def __str__(self):

@@ -14,9 +14,7 @@ function resizing() {
             var cardSize = cards[i].offsetHeight
             if (cardSize > globalSize) {
                 globalSize = cardSize
-                console.log('loc ' + cardSize )
             }
-            console.log(globalSize)
         }
 
         document.getElementById("bluebar").style.height = globalSize + "px";

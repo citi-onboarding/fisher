@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
+from django.core.mail import send_mail
+
 from .models import (
     AboutUs,
     MVV,
@@ -8,7 +10,18 @@ from .models import (
 # Create your views here.
 def home_view(request):
     if request.method == "POST":
-        print("POST")
+        send_mail(
+            '[CONTATO-SITE]',
+            'Nome:{}\nEmail: {}\nTelefone: {}\nMensagem: {}'.format(
+              request.POST.get('nome'),
+              request.POST.get('email'),
+              request.POST.get('tel'),
+              request.POST.get('conteudo'),
+            ),
+            'fishersite@gmail.com',
+            ['eder.marques@citi.org.br'],
+            fail_silently=False,
+        )
     else:
         context = getContext()
         return render(request, "home.html", context)

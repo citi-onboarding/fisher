@@ -6,6 +6,7 @@ from .models import (
     AboutUs,
     MVV,
     Depoimento,
+    Servico,
 )
 
 # Create your views here.
@@ -31,6 +32,7 @@ def home_view(request):
 def getContext():
     aboutUs = AboutUs.objects.all()
     depoimentos = Depoimento.objects.all()
+    servicos = Servico.objects.all()
     mvv = MVV.objects.all()
     aboutUsContext = None
     mvvContext = None
@@ -45,7 +47,8 @@ def getContext():
     return {
       'mvv': mvvContext,
       'aboutUs': aboutUsContext,
-      'depoimentos': depoimentos
+      'depoimentos': depoimentos,
+      'servicos': servicos,
     }
 
     

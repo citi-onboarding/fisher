@@ -32,4 +32,15 @@ class Depoimento(models.Model):
     def __str__(self):
         return self.category
     class Meta:
-        verbose_name = 'Depoimento' 
+        verbose_name = 'Depoimento'
+
+class Servico(models.Model):
+    category = models.CharField('Categoria', max_length = 50, default = 'Serviço')
+    titulo = models.CharField('Título', max_length=50, default='')
+    conteudo = models.TextField('Conteúdo', max_length = 500, default='')
+    image = models.ImageField('Imagem', upload_to='servicos/', null=True)
+
+    def __str__(self):
+        return self.category
+    class Meta:
+        verbose_name = 'Serviço' 

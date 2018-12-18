@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/base.css' %}">
   <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/navbar.css' %}">
   <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/banner.css' %}">
@@ -68,60 +69,40 @@
       </div>
     </div>
     <!-- Fim do banner -->
+    <!-- Sobre Nos -->
     <div id="sobrenos">
-
       <div class="tudo-sobrenos">
-    
-    <div class="up-sobrenos">
-            <h1> SOBRE NÓS </h1>
+        <div class="up-sobrenos">
+            <h1> {{ aboutUs.category }} </h1>
         </div>
-    <div class="sobre-sobrenos">
-        <div id="img-sobrenos"></div>
-        <div id="texto-sobrenos">
-            <div class="txx-sobrenos">
-                A Estatística é bastante utilizada em 
-                diversos ramos da sociedade, no intuito de 
-                realizar pesquisas, colher dados e processá-los, 
-                analisar informações, apresentar situações através de gráficos de fácil 
-                compreensão. Os meios de comunicação, ao utilizarem gráficos, deixam a leitura mais agradável. 
-                O IBGE (Instituto Brasileiro de Geografia e Estatística) é considerado um órgão importante e conceituado na área. No intuito de conhecer e aprofundar nos estudos estatísticos precisamos conhecer alguns conceitos e fundamentos primordiais para o desenvolvimento de uma pesquisa.
-            </div>
+        <div class="sobre-sobrenos">
+            <div id="img-sobrenos" style="background-image: url('{{ aboutUs.image.url }}');"></div>
+            <div class="txx-sobrenos"> {{ aboutUs.description }} </div>
         </div>
+      </div>
+      <div id="mvv">
+        <h2 class="mvv-title">Missão</h2>
+        <div class="card-mvv" id="mission">
+            <h2 class="card-title">Missão</h2>
+          <img src="{% static 'imagens/flag.png' %}" alt="" class="card-image">
+          <div class="card-description"> {{ mvv.mission }} </div>
+        </div>
+        <h2 class="mvv-title">Visão</h2>
+        <div class="card-mvv" id="vision">
+            <h2 class="card-title">Visão</h2>
+          <img src="{% static 'imagens/view.png' %}" alt="" class="card-image">
+          <div class="card-description"> {{ mvv.vision }} </div>
+        </div>
+        <h2 class="mvv-title">Visão</h2>
+        <div class="card-mvv" id="values">
+          <h2 class="card-title">Valores</h2>
+          <img src="{% static 'imagens/like.png' %}" alt="" class="card-image">
+          <div class="card-description"> {{ mvv.values }}</div>
+        </div>
+        <div id="bluebar"></div>
+      </div>    
     </div>
-
-    <div class="icones-sobrenos">
-
-    <div class="vmv">
-        <div class="quadrado-sobrenos" id="q-1-sobrenos">
-            <div class="title-sobrenos">  Visão  </div>
-            <div id="visao-img">
-              
-            </div>
-        </div>
-        <div class="quadrado-sobrenos" id="q-2-sobrenos">
-            <div class="title-sobrenos">  Missão  </div>
-        </div>
-        <div class="quadrado-sobrenos" id="q-3-sobrenos">
-            <div class="title-sobrenos">  Valores  </div>
-        </div>
-    </div>
-
-    <div class="vmv2">
-        <div class="sec" id="q-4-sobrenos">
-            <div class="desc">  Tornar-se uma empresa de referencia no mercado Brasileiro por meio da satisfação dos nossos clientes.  </div>
-        </div>
-        <div class="sec" id="q-5-sobrenos">
-            <div class="desc">  Difundir a Estatística de forma prática e acessível, mantendo o cliente a frente em seus projetos.  </div>
-        </div>
-        <div class="sec" id="q-6-sobrenos">
-            <div class="desc">  Comprometimento, qualidade, atenção aos detalhes, clareza nos resultados, foco no cliente, valorização dos funcionários e respeito ao meio ambiente  </div>
-        </div>
-    </div>
-    </div>
-</div>    
-    </div>
-  
-
+    <!-- Fim do sobre nós -->
   <div id="servicos">
       
 

@@ -18,8 +18,8 @@ def home_view(request):
               request.POST.get('tel'),
               request.POST.get('conteudo'),
             ),
-            'fishersite@gmail.com',
-            ['eder.marques@citi.org.br'],
+            'MY_EMAIL',
+            ['MY_ANOTHER_EMAIL'],
             fail_silently=False,
         )
     else:

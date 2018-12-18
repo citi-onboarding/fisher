@@ -7,7 +7,11 @@ $('document').ready(() => {
 
 $('#avatar-imagem').css('background-image', `url(media/${$(`.slider-item[index=0]`).attr('imgurl')})`); 
 
-$('.slider-active').on('afterChange', (event, slick, activeSlide) => {
-  $('#avatar-imagem').css('background-image', `url(media/${$(`.slider-item[index=${activeSlide}]`).attr('imgurl')})`); 
+$('.slider-active').on('beforeChange', (event, slick, currentSlide, nextSlide) => {
+  $('#avatar-imagem').css({
+    'background-image': `url(media/${$(`.slider-item[index=${nextSlide}]`).attr('imgurl')})`
+  });
 });
+
+
 

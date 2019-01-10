@@ -7,7 +7,6 @@
   display: flex;
   background-color: #F2F2F2;
   font-family: 'Roboto', sans-serif;
-  position: relative;
 
 }
 
@@ -87,7 +86,6 @@
 .carousel-prev {
   right: 10vw;
   transform: rotate(180deg);
-  z-index: 1000;
 }
 
 
@@ -143,14 +141,18 @@
   }
 
   .carousel-next {
-    left: 0;
-    bottom: 4%;
-    top: unset;
+    left: 10%;
+    top: 4%;
   }
   
   .carousel-prev {
-    right: 0;
-    bottom: 4%;
-    top: unset;
+    left: 25%;
+    top: 4%;
+  }
+}
+
+@media(max-width: 450px) {
+  .card-item .image {
+    margin-left: 32%;
   }
 }

@@ -35,6 +35,7 @@ body {
     flex-direction: row;
     align-items: center;
     list-style-type: none;
+    padding: 0;
 }
 
 .nav-container ul a,

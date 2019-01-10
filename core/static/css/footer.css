@@ -61,14 +61,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     background-color: #000055;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    top: -25px;
-    right: -25px;
+    top: -20px;
+    right: -20px;
     background-size: 40px;  
     transform: rotate(45deg);
 }

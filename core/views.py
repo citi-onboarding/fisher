@@ -5,6 +5,7 @@ from django.core.mail import send_mail
 from .models import (
     AboutUs,
     MVV,
+    Depoiments,
 )
 
 # Create your views here.
@@ -30,6 +31,7 @@ def home_view(request):
 def getContext():
     aboutUs = AboutUs.objects.all()
     mvv = MVV.objects.all()
+    depoiments = Depoiments.objects.all()
     aboutUsContext = None
     mvvContext = None
 
@@ -40,7 +42,7 @@ def getContext():
     if len(aboutUs) != 0:
         aboutUsContext = aboutUs[0]
 
-    return {'mvv': mvvContext, 'aboutUs': aboutUsContext}
+    return {'mvv': mvvContext, 'aboutUs': aboutUsContext, 'depoiments': depoiments}
 
     
 

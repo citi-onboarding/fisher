@@ -20,6 +20,6 @@ function resizeDepoiments() {
     }
   }
   var track = document.getElementsByClassName('slick-track')
-  track[0].style.height = topHeight + "px";
+  if(track[0]) track[0].style.height = topHeight + "px";
   topHeight = 0
 }

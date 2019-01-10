@@ -19,6 +19,7 @@
   flex-direction: column;
   align-items: flex-start;
   widows: 100%;
+  justify-content: space-around;
 }
 
 .slick-list {

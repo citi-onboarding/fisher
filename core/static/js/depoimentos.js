@@ -7,11 +7,11 @@ $('document').ready(() => {
   });
 });
 
-window.onload = resizeDepoiments()
-$( window ).resize(resizeDepoiments)
+window.onload = resizeDepoiments();
 
 var topHeight = 0;
 function resizeDepoiments() {
+  console.log('oi')
   cards = document.getElementsByClassName('card-item');
   var i = 0;
   for (i = 0; i < cards.length; i ++){

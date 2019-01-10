@@ -1,0 +1,54 @@
+#servicos {
+  background-color: #05113a;
+  height: 600px;
+}
+
+#title-servicos-h1 {
+  color: white;
+}
+#title-servicos-h1:after {
+  background-color: white;
+}
+
+#title-servicos-h1:before {
+  background-color: white;
+}
+
+#carrossel-servicos-container {
+  width: 100%;
+  height: 360px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+
+#carrossel-servicos {
+  width: 60%;
+  background-color: yellow;
+}
+
+.servico-item {
+  width: 60%;
+  height: 360px;
+}
+
+.servico-content-container {
+  width: 100%;
+  height: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: #3e4763;
+}
+
+.servico-item-conteudo{
+  background-color: aqua;
+  width: 50%;
+  height: 100%;
+}
+
+.servico-item-img{
+  background-color: orange;
+  width: 50%;
+  height: 100%;
+}

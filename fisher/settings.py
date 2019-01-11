@@ -28,8 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'MY_EMAIL'
-EMAIL_HOST_PASSWORD = 'MY_PASSWORD'
+EMAIL_HOST_USER = 'fisherconsultoria1@gmail.com'
+EMAIL_HOST_PASSWORD = 'fisher&citi'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 

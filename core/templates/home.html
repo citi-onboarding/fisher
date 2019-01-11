@@ -109,23 +109,50 @@
     <div id="title-servicos-div">
       <h1 id="title-servicos-h1">SERVIÇOS</h1>
     </div>
-    {% for servico in servicos %}
     <div id="carrossel-servicos-container">
       <div id="carrossel-servicos">
+        {% for servico in servicos %}
         <div class="servico-content-container">
           <div class="servico-item">
-            <div class="servico-item-img"></div>
+            <div class="servico-item-img"><img src="{{servico.image}}" alt="Imagem Serviço"></div>
             <div class="servico-item-conteudo">
-              <div class="servico-item-title">Título</div>
-              <div class="servico-item-text">Aqui tem um texto. Aqui tem um texto. Aqui tem um texto. Aqui tem um texto.
-                Aqui tem um texto. </div>
-              <button class="solicitar-servico">Solicitar Serviço</button>
+              <div class="servico-item-title">{{ servico.title}}</div>
+              <div class="servico-item-text">{{ servico.description}}</div>
+              <button class="solicitar-servico" data="{{servico.title}}">Solicitar Serviço</button>
             </div>
           </div>
         </div>
+        {% endfor %}
       </div>
     </div>
-    {% endfor %}
+  </div>
+  <div id="servico-modal-container">
+    <div id="servico-modal">
+      <form method="POST" id="servico-form">
+        {% csrf_token %}
+        <span id="modal-close">X</span>
+        <div>
+          <input class="servico-modal-input" type="text" name="name" placeholder="Nome">
+        </div>
+        <div>
+          <input class="servico-modal-input" type="email" name="email" placeholder="E-mail">
+        </div>
+        <div>
+          <select class="servico-modal-input" name="servico" id="servico-select">
+            <option value="" disabled>Serviço</option>
+            {% for servico in servicos %}
+            <option value="{{ servico.title }}">{{ servico.title }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div>
+          <textarea class="servico-modal-input" name="description" cols="30" rows="10" placeholder="Descrição"></textarea>
+        </div>
+        <div>
+          <input class="servico-modal-input" type="submit" value="Enviar">
+        </div>
+      </form>
+    </div>
   </div>
 
   <div id="depoimentos">

@@ -12,18 +12,36 @@ from .models import (
 # Create your views here.
 def home_view(request):
     if request.method == "POST":
-        send_mail(
-            '[CONTATO-SITE]',
-            'Nome:{}\nEmail: {}\nTelefone: {}\nMensagem: {}'.format(
-              request.POST.get('nome'),
-              request.POST.get('email'),
-              request.POST.get('tel'),
-              request.POST.get('conteudo'),
-            ),
-            'MY_EMAIL',
-            ['MY_ANOTHER_EMAIL'],
-            fail_silently=False,
-        )
+        if request.POST.get('servico'):
+            send_mail(
+                '[SERVIÇO-SITE]',
+                'Nome:{}\nEmail: {}\nServiço: {}\nDescrição: {}'.format(
+                  request.POST.get('nome'),
+                  request.POST.get('email'),
+                  request.POST.get('servico'),
+                  request.POST.get('description'),
+                ),
+                'fisherconsultoria1@gmail.com',
+                ['eder.marques@citi.org.br'],
+                fail_silently=False,
+            )
+            context = getContext()
+            return render(request, "home.html", context)
+        else:
+            send_mail(
+                '[CONTATO-SITE]',
+                'Nome:{}\nEmail: {}\nTelefone: {}\nMensagem: {}'.format(
+                  request.POST.get('nome'),
+                  request.POST.get('email'),
+                  request.POST.get('tel'),
+                  request.POST.get('conteudo'),
+                ),
+                'fisherconsultoria1@gmail.com',
+                ['eder.marques@citi.org.br'],
+                fail_silently=False,
+            )
+            context = getContext()
+            return render(request, "home.html", context)
     else:
         context = getContext()
         return render(request, "home.html", context)

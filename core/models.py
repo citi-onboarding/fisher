@@ -33,3 +33,14 @@ class Depoiments(models.Model):
         return self.author
     class Meta:
         verbose_name = 'Depoimento' 
+
+class Services(models.Model):
+    title = models.CharField('Título', max_length=50, default='')
+    content = models.TextField('Conteúdo', max_length = 350, default='')
+    image = models.ImageField('Imagem', upload_to='servicos/', null=True)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'Serviço'  

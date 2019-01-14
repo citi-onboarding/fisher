@@ -123,6 +123,34 @@
       </div>
     </div>
   </div>
+  <div id="servico-modal-container">
+    <div id="servico-modal">
+      <form method="POST" id="servico-form">
+        {% csrf_token %}
+        <span id="modal-close">X</span>
+        <div>
+          <input class="servico-modal-input" type="text" name="name" placeholder="Nome">
+        </div>
+        <div>
+          <input class="servico-modal-input" type="email" name="email" placeholder="E-mail">
+        </div>
+        <div>
+          <select class="servico-modal-input" name="servico" id="servico-select">
+            <option value="" disabled>Serviço</option>
+            {% for servico in servicos %}
+            <option value="{{ servico.title }}">{{ servico.title }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div>
+          <textarea class="servico-modal-input" name="description" cols="30" rows="10" placeholder="Descrição"></textarea>
+        </div>
+        <div>
+          <input class="servico-modal-input" type="submit" value="Enviar">
+        </div>
+      </form>
+    </div>
+  </div>
   {% endif %}
   {% if depoiments %}
   <div id="depoimentos">

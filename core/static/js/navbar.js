@@ -1,3 +1,11 @@
+function myfunction(X) {
+  X.classList.toggle("change");
+}
+
+$('.container').click(function () {
+  $("#nav-mobile").slideToggle("slow", function () {});
+});
+
 $('.navbar-link').on('click', function (event) {
   if (this.hash !== '') {
       event.preventDefault();

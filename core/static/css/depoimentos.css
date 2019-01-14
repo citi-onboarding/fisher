@@ -28,7 +28,7 @@
 .card-item .image {
   position: absolute;
   top: -50px;
-  margin-left: 11%;
+  margin-left: 16%;
 }
 
 .card-item img {
@@ -103,7 +103,7 @@
   }
   
   .card-item .image {
-    margin-left: 10%;
+    margin-left: 14%;
   }
 
   .card-item .image .box {
@@ -153,7 +153,7 @@
 
 @media(max-width: 450px) {
   .card-item .image {
-    margin-left: 8%;
+    margin-left: 12%;
   }
 }
 

@@ -29,10 +29,10 @@
       </div>
       <div class="nav-container">
         <ul>
-          <a href="#sobrenos"> Sobre Nós </a>
-          <a href=""> Serviços </a>
-          <a href=""> Clientes </a>
-          <a href=""> Contatos </a>
+          <a href="#sobrenos" class="navbar-link"> Sobre Nós </a>
+          <a href="#servicos" class="navbar-link"> Serviços </a>
+          <a href="#depoimentos" class="navbar-link"> Depoimentos </a>
+          <a href="#contato" class="navbar-link"> Contato </a>
         </ul>
       </div>
       <div class="toggle">
@@ -105,11 +105,26 @@
     </div>
   </div>
   <!-- Fim do sobre nós -->
+  {% if services %}
   <div id="servicos">
-
-
+    <h1 class=""> Serviços </h1>
+    <div id="servicos-container">
+      <div class="servicos-card">
+        {% for service in services %}
+        <div class="servicos-card-item">
+          <img src="{{ service.image.url }}" alt="">
+          <div class="servicos-text">
+            <div class="servicos-title"> {{ service.title }}</div>
+            <div class="servicos-content"> {{ service.content }} </div>
+            <button>Solicitar serviço</button>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
   </div>
-
+  {% endif %}
+  {% if depoiments %}
   <div id="depoimentos">
     <h1 id="title-depoimentos-h1">Depoimentos</h1>
     <div id="depoimentos-container">
@@ -127,6 +142,7 @@
       </div>
     </div>
   </div>
+  {% endif %}
 
 
   <div id="contato">

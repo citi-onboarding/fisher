@@ -249,13 +249,12 @@
     position: absolute;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0);
-    transform: rotate(180deg);
     border: none;
-    width: 58px;
+    width: 40px;
     display: flex;
     flex-direction: row;
-    top: 35%;
-    right: -200px;
+    bottom: 7px;
+    right: 260px;
 }
 
 .service-prev {
@@ -263,16 +262,16 @@
     z-index: 1;
     background-color: rgba(0, 0, 0, 0);
     border: none;
-    width: 58px;
+    width: 40px;
     display: flex;
     flex-direction: row;
-    top: 35%;
-    left: -200px;
+    bottom: 7px;
+    left: 260px;
 }
 
 .service-next img,
 .service-prev img {
-    width: 50px;
+    width: 40px;
 }
 
 .service-prev img path,
@@ -282,6 +281,26 @@
 
 .slick-list.draggable {
     height: 350px;
+}
+
+@media(max-width: 1300px){
+    .service-next {
+        right: 150px;
+    }
+
+    .service-prev{
+        left: 150px;
+    }
+}
+
+@media(max-width: 950px){
+    .service-next {
+        right: 50px;
+    }
+
+    .service-prev {
+        left: 50px;
+    }
 }
 
 @media(max-width: 850px){
@@ -294,4 +313,94 @@
     .servicos-card .slick-dots {
         margin-top: 120px;
     }
+
+    .service-next {
+        right: 25px;
+    }
+
+    .service-prev {
+        left: 25px;
+    }
+}
+
+/* modal */
+
+#servico-modal-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 6;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(71, 71, 71, 0.664);
+}
+
+#servico-form {
+    padding: 25px 10px;
+}
+
+#servico-modal {
+    min-width: 320px;
+    min-height: 400px;
+    background-color: #05113a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#servico-modal div{
+  margin-top: 20px;
+}
+
+.servico-modal-input {
+  width: 100%;
+  height: 30px;
+  color: gray;
+  font-family: 'Roboto', sans-serif;
+}
+
+#servico-select {
+    width: 101%;
+    background-color: white;
+    border: 0;
+}
+
+#servico-select option {
+    background-color: white;
+    color: black;
+}
+
+#servico-modal textarea {
+    height: 70px;
+    width: 99%;
+}
+
+#modal-close {
+  top: -10px;
+  display: block;
+  position: relative;
+  color: white;
+  float: right;
+  cursor: pointer;
+  width: 15px;
+}
+
+#servico-submit {
+    transition: all 0.2s linear;
+    padding: 5px 10px;
+    color: white;
+    width: 100%;
+    border: 1px solid white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#servico-submit:hover {
+    color: #000055;
+    border: 1px solid #000055;
+    background-color: white;
 }

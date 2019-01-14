@@ -116,11 +116,39 @@
           <div class="servicos-text">
             <div class="servicos-title"> {{ service.title }}</div>
             <div class="servicos-content"> {{ service.content }} </div>
-            <button>Solicitar serviço</button>
+            <button class="solicitar-servico">Solicitar serviço</button>
           </div>
         </div>
         {% endfor %}
       </div>
+    </div>
+  </div>
+  <div id="servico-modal-container">
+    <div id="servico-modal">
+      <form method="POST" id="servico-form">
+        {% csrf_token %}
+        <img src="{% static 'imagens/letter-x.svg' %}" id="modal-close" alt="">
+        <div>
+          <input class="servico-modal-input" type="text" name="name" placeholder="Nome">
+        </div>
+        <div>
+          <input class="servico-modal-input" type="email" name="email" placeholder="E-mail">
+        </div>
+        <div>
+          <select class="servico-modal-input" name="servico" id="servico-select">
+            <option value="" disabled>Serviço</option>
+            {% for service in services %}
+            <option value="{{ service.title }}">{{ service.title }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div>
+          <textarea class="servico-modal-input" name="description" cols="30" rows="10" placeholder="Descrição"></textarea>
+        </div>
+        <div>
+          <input class="servico-modal-input" id="servico-submit"type="submit" value="Enviar">
+        </div>
+      </form>
     </div>
   </div>
   {% endif %}

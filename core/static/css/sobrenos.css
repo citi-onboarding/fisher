@@ -32,9 +32,8 @@
 
 #img-sobrenos {
     width: 45%;
-    height: 480px;
-    background-repeat: no-repeat;
-    background-position: center center;
+    height: 400px;
+    object-fit: cover;
 }
 
 .txx-sobrenos {

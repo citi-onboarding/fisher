@@ -404,3 +404,9 @@
     border: 1px solid #000055;
     background-color: white;
 }
+
+#outros-servicos-title {
+  color: #000055;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+}

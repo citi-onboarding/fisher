@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core'
+    'core',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -87,6 +88,17 @@ DATABASES = {
     }
 }
 
+DEFAULT_FILE_STORAGE = 'django_dropbox_storage.storage.DropboxStorage'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
+
+DROPBOX_OAUTH2_TOKEN=config('DROPBOX_ACCESS_TOKEN_SECRET')
+
+DROPBOX_ROOT_PATH='media'
+
+MEDIA_URL = '/media/'
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators

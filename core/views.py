@@ -20,13 +20,12 @@ def home_view(request):
               request.POST.get('tel'),
               request.POST.get('conteudo'),
             ),
-            'MY_EMAIL',
-            ['MY_ANOTHER_EMAIL'],
+            'fisherconsultoria1@gmail.com',
+            ['fisherconsultoria@gmail.com'],
             fail_silently=False,
         )
-    else:
-        context = getContext()
-        return render(request, "home.html", context)
+    context = getContext()
+    return render(request, "home.html", context)
 
 
 def getContext():
